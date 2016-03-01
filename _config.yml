@@ -6,7 +6,7 @@ description: >
   to display the Adobe Keybindings for different programs. This will be built
   in Jekyll and stored in GitHub until launch. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "jimmerritt.io" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: thirdactpub
 github_username:  JimMerritt
 markdown: kramdown
