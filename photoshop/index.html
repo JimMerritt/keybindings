@@ -4,4 +4,37 @@ title: 'Photoshop'
 date: 2016-02-24 09:00:00 -0500
 ---
 
-This is the photoshop page.
+<h1>Ps</h1>
+
+<section id="keyboard">
+  <div id="function-keys" class="keyboard-row">
+    {% for num in (1...14) %}
+      <div id="function-key-{{ num }}"></div>
+    {% endfor %}
+  </div>
+  <div id="numeric-keys" class="keyboard-row">
+    {% for num in (1...14) %}
+      <div id="numeric-key-{{ num }}"></div>
+    {% endfor %}
+  </div>
+  <div id="qwerty-keys" class="keyboard-row">
+    {% for num in (1...14) %}
+      <div id="qwerty-key-{{ num }}"></div>    
+    {% endfor %}
+  </div>
+  <div id="asdf-keys" class="keyboard-row">
+    {% for num in (1...13) %}
+      <div id="asdf-key-{{ num }}"></div>     
+    {% endfor %}
+  </div>
+  <div id="zxcv-keys" class="keyboard-row">
+    {% for num in (1...12) %}
+      <div id="zxcv-key-{{ num }}"></div>
+    {% endfor %}
+  </div>
+  <div id="space-keys" class="keyboard-row">
+    {% for num in (1...7) %}
+      <div id="space-key-{{ num }}"></div>    
+    {% endfor %}
+  </div>
+</section>
