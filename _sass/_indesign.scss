@@ -1,0 +1,20 @@
+.interactive-keybinding.indesign {
+  $light-pink: rgb(255, 72, 150);
+  $dark-purple: rgb(156, 45, 91);
+  background-color: $light-pink;
+  background-image: radial-gradient( ellipse, $light-pink 0%, $dark-purple 85%);
+  #keyboard {
+    #function-keys {
+    }
+    #numeric-keys {
+    }
+    #qwerty-keys {
+    }
+    #asdf-keys {
+    }
+    #zxcv-keys {
+    }
+    #space-keys {
+    }
+  }
+}

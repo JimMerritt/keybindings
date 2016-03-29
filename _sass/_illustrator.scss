@@ -1,0 +1,20 @@
+.interactive-keybinding.illustrator {
+  $light-orange: rgb(255, 136, 40);
+  $dark-orange: rgb(155, 78, 23);
+  background-color: $light-orange;
+  background-image: radial-gradient( ellipse, $light-orange 0%, $dark-orange 85%);
+  #keyboard {
+    #function-keys {
+    }
+    #numeric-keys {
+    }
+    #qwerty-keys {
+    }
+    #asdf-keys {
+    }
+    #zxcv-keys {
+    }
+    #space-keys {
+    }
+  }
+}

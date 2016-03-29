@@ -1,0 +1,150 @@
+.interactive-keybinding {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  .post-content {
+    position: absolute;
+    width: 100%;
+    top: 3vh;
+    text-align: center;
+    z-index: 0;
+    h1 {
+      margin: 2vh 0 4vh;
+      line-height: 1;
+      opacity: 0.3;
+      font-size: 20vw;
+      letter-spacing: -0.08em;
+      color: white;
+      font-weight: 700;
+    }
+  }
+}
+
+#keyboard {
+  font-family: $keyboard-font-family;
+  width: 80vw;
+  min-width: 850px;
+  margin: 0 10vw;
+  @media screen and (max-width: 1000px) {
+    margin: 0 auto;  
+  }
+  padding: 1vw;
+  box-sizing: border-box;
+  background-color: rgb(205, 205, 205);
+  border-radius: 15px;
+  z-index: 500;
+  border-bottom: 3px solid rgba(15, 15, 25, 0.3);
+  color: $charcoal;
+  > .keyboard-row {
+    margin: 1vh 0;
+    height: 5.5vh;
+    &:first-of-type {
+      height: 3vh;
+    }
+    > div {
+      position: relative;
+      margin: 0 0.35%;
+      background-color: #F3F2F4;
+      height: 100%;
+      border-radius: 5px;
+      border-bottom: 1px solid rgb(165, 165, 165);
+      box-shadow: 1px 3px 3px rgb(180, 180, 180);
+      text-align: center;
+      &.left {
+        text-align: left;
+        p {
+          margin-left: .5em;  
+        }
+      }
+      &.right {
+        text-align: right;
+        p {
+          margin-left: -.5em;  
+        }
+      }
+      p {
+        position: absolute;
+        bottom: .5em;
+        margin: 0;
+        width: 100%;
+        font-size: 0.7em;
+        line-height: 1;
+        letter-spacing: 1px;
+        svg#command-key-icon {
+          display: inline;
+          height: 1em;
+          fill: currentColor;
+          &.first-command-key {
+            margin: 0 0 0 .5em;  
+          }
+          &.second-command-key {
+            margin: 0 .5em 0 0;  
+          }
+        }
+      }
+    }
+  }
+  #function-keys {
+    width: 100%;
+    display: flex;
+    div {
+      display: inline-block;
+      width: 6.642%;
+    }
+  }
+  #numeric-keys {
+    width: 100%;
+    display: flex;
+    div {
+      display: inline-block;
+      width: 6.342%;
+      &:last-of-type {
+        width: 10.542%
+      }
+    }
+  }
+  #qwerty-keys {
+    width: 100%;
+    display: flex;
+    div {
+      display: inline-block;
+      width: 6.342%;
+      &:first-of-type {
+        width: 10.542%
+      }
+    }
+  }
+  #asdf-keys {
+    width: 100%;
+    display: flex;
+    div {
+      display: inline-block;
+      width: 6.342%;
+      &:first-of-type, &:last-of-type {
+        width: 11.763%
+      }
+    }
+  }
+  #zxcv-keys {
+    width: 100%;
+    display: flex;
+    div {
+      display: inline-block;
+      width: 6.342%;
+      &:first-of-type, &:last-of-type {
+        width: 14.784%
+      }
+    }
+  }
+  #space-keys {
+    width: 100%;
+    display: flex;
+    div {
+      display: inline-block;
+      width: 10%;
+      &:nth-of-type(4) {
+        width: 40%;
+      }
+    }
+  }
+}

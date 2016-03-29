@@ -5,8 +5,6 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
     position: relative;
 }
 
@@ -239,4 +237,47 @@
             font-size: 18px;
         }
     }
+}
+
+#side-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10vw;
+  text-align: center;
+  color: white;
+  z-index: 1000;
+  a {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 1vh 0;
+    padding: 1%;
+    box-sizing: border-box;
+  }
+  svg {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    opacity: 0.3;
+    transition: all .25s ease;
+  }
+  a:hover svg {
+    opacity: 0.6;
+    transform: scale(1.25);
+    transition: all .25s ease;
+  }
+  @media screen and (max-width: 1000px) {
+    top: 90%;
+    width: 20%;
+    margin: 0 35%;
+    display: flex;
+    a {
+      display: inline-block;
+      width: 33.333%;
+      svg {
+        width: 75%;  
+      }
+    }
+  }
 }

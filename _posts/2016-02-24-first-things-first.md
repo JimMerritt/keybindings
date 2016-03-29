@@ -12,9 +12,9 @@ The first one will be Photoshop.
   <defs>
     <path id="MyPath"
       d=" M 100 200
-          C 200 100 300   0 400 100
+          C 100 100 300   0 400 100
           C 500 200 600 300 700 200
-          C 800 100 900 100 900 100"/>
+          C 800 100 900 100 800 100"/>
   </defs>
   <use xlink=:href="#MyPath" fill="none" stroke="red" />
   
