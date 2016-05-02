@@ -3,6 +3,7 @@ window.onload = function () {
   var keyPressed = function (event) {
     event.preventDefault();
     var code = event.keyCode;
+    console.log(code);-
     switch (code) {
     case 16:
       document.getElementById('shift1').setAttribute('style', 'background-color: ' + pageColor);
