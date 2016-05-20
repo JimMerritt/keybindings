@@ -4,9 +4,10 @@ email: merritt.ja@gmail.com
 description: >
   This project is centered around developing an interactive mini-site
   to display the Adobe Keybindings for different programs. This will be built
-  in Jekyll and stored in GitHub until launch. 
+  in Jekyll and stored in GitHub until launch.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: thirdactpub
 github_username:  JimMerritt
 markdown: kramdown
+exclude: [node_modules]
